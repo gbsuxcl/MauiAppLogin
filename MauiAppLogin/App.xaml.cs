@@ -7,6 +7,19 @@
             InitializeComponent();
 
             MainPage = new AppShell();
-        }
-    }
-}
+
+        }// Fecha Metódo App
+
+        protected override Window CreateWindow(IActivationState activationState)
+        {
+            var window = base.CreateWindow(activationState);
+
+            window.Width = 400;
+            window.Height = 600;
+
+            return window;
+        }// Fecha Metódo Window
+
+    } //Fecha Classe
+  
+} //Fecha namespace
