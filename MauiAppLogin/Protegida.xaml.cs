@@ -4,7 +4,7 @@ public partial class Protegida : ContentPage
 {
 	public Protegida()
 	{
-		InitializeComponent();
+		InitializeComponent();	
 
 		string? usuario_logado = null;
 
@@ -12,7 +12,8 @@ public partial class Protegida : ContentPage
 		{
 			usuario_logado = await SecureStorage.Default.GetAsync("usuario_logado");
             lbl_boasvindas.Text = $"Bem-vindo (a) {usuario_logado}";
-		});
+
+        });
 	}
 
 	// DESLOGAR

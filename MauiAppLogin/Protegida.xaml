@@ -15,7 +15,7 @@
                        HorizontalTextAlignment="Center" />
 
                 <Label x:Name="lbl_boasvindas" 
-                       HorizontalTextAlignment"Center" />
+                       HorizontalTextAlignment="Center" />
 
                 <Button Text="Desconectar"
                         Clicked="Button_Clicked"
